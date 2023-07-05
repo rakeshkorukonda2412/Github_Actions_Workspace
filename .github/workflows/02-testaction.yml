@@ -8,3 +8,10 @@ jobs:
       run: echo "Checkout code from git repository"
     - name: update the branch
       run: echo "Update branch with new changes"
+  second-job:
+     runs-on: ubuntu-latest
+    steps:
+    - name: test multiple commands
+     run: |
+         echo "command1 - test"
+         echo "command2 - test"
