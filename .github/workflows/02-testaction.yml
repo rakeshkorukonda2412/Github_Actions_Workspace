@@ -3,3 +3,8 @@ on: workflow_dispatch
 jobs:
   first-job:
     runs_on: ubuntu-latest
+    steps:
+    - name: checkout the code
+      run: echo "Checkout code from git repository"
+    - name: update the branch
+      run: echo "Update branch with new changes"
