@@ -2,7 +2,7 @@ name: pushtest
 on: push
 jobs:
   checkout:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: test job
       run: echo "running action on push event"
