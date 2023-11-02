@@ -7,4 +7,7 @@ jobs:
         - name: get chef-repo clone
           run: echo "cloning chef repo from github"
         - name: upload data to chef server
-          run:  echo "upload chef-repo data to chef server"
+          run:  |
+            echo "upload chef-repo data to chef server"
+            echo "run knife commands to upload data"
+            echo "validate uploaded data"
